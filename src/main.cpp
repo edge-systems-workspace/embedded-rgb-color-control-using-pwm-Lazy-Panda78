@@ -23,9 +23,17 @@ void setup() {
 
 void loop() {
 
+    // Digital Blink
     digitalWrite(RED_pin, HIGH);
     delay(1000);
 
     digitalWrite(RED_pin, LOW);
     delay(1000);
+
+    // PWM Example (Red full brightness)
+    analogWrite(RED_pin, 255);
+    delay(1000);
+
+    analogWrite(RED_pin, 0);
+    delay(500);
 }
