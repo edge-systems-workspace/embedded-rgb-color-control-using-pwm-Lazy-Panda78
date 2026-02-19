@@ -22,4 +22,10 @@ void setup() {
 }
 
 void loop() {
+
+    digitalWrite(RED_pin, HIGH);
+    delay(1000);
+
+    digitalWrite(RED_pin, LOW);
+    delay(1000);
 }
